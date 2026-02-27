@@ -1,25 +1,158 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
+    <title>Lab2 - Screenshots</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: white;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInDown 1s ease-out;
+        }
+
+        h4 {
+            color: #333;
+            font-size: 1.3em;
+            margin: 30px 0 15px 0;
+            background: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            animation: fadeIn 1s ease-out;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 5px solid white;
+            animation: zoomIn 0.8s ease-out;
+            display: block;
+            margin: 0 auto;
+        }
+
+        img:hover {
+            transform: scale(1.02) translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+            border-color: #667eea;
+        }
+
+        /* Анимации */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+                margin-bottom: 20px;
+            }
+            
+            h4 {
+                font-size: 1.1em;
+                padding: 8px 20px;
+            }
+            
+            img {
+                border-width: 3px;
+            }
+            
+            img:hover {
+                transform: scale(1.01);
+            }
+        }
+
+        /* Контейнер для изображений */
+        img {
+            max-width: 90%;
+            margin-bottom: 20px;
+        }
+
+        /* Добавляем небольшой контейнер для каждого скриншота */
+        h4 + img {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
     <h1>Hi. Here my lab2</h1>
-    <h4>So, first screenshot</h4>
+    
+    <h4>📸 First screenshot</h4>
     <img src="img1.png" alt="1" />
-    <h4>Second screenshot</h4>
+    
+    <h4>📸 Second screenshot</h4>
     <img src="img2.png" alt="2" />
-    <h4>Third screenshot</h4>
+    
+    <h4>📸 Third screenshot</h4>
     <img src="img3.png" alt="3" />
-    <h4>Fourth screenshot</h4>
+    
+    <h4>📸 Fourth screenshot</h4>
     <img src="img4.png" alt="4" />
-    <h4>Fifth screenshot</h4>
+    
+    <h4>📸 Fifth screenshot</h4>
     <img src="img5.png" alt="5" />
-    <h4>Sixth screenshot</h4>
+    
+    <h4>📸 Sixth screenshot</h4>
     <img src="img6.png" alt="6" />
-    <h4>Seventh screenshot</h4>
+    
+    <h4>📸 Seventh screenshot</h4>
     <img src="img7.png" alt="7" />
-  </body>
+</body>
 </html>
